@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>$750 Amazon Bonus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .logo {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #4285f4;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .headline {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #202124;
+    }
+
+    .subtext {
+      color: #5f6368;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      border: 1px solid #dadce0;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4285f4;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #357ae8;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #70757a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">G-Bonus</div>
+
+  <div class="container">
+    <div class="headline">Sign Up and Get a $750 Amazon Bonus!</div>
+    <div class="subtext">Shop your favorites now.</div>
+
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Claim Your Bonus</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    Not affiliated with Google or Amazon. Terms apply.
+  </div>
+
+</body>
+</html>

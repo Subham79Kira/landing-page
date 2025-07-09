@@ -1,102 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$750 Amazon Bonus</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Game Zone</title>
   <style>
+    :root {
+      --main-color: #3f51b5;
+      --accent-color: #ff4081;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+    }
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
     }
-
     body {
-      background-color: #f8f9fa;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 0;
     }
-
-    .logo {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #4285f4;
-      margin-bottom: 20px;
-    }
-
-    .container {
-      background: white;
-      padding: 30px 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .headline {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #202124;
-    }
-
-    .subtext {
-      color: #5f6368;
-      margin-bottom: 20px;
-    }
-
-    input[type="email"] {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      margin-bottom: 15px;
-      border: 1px solid #dadce0;
-      border-radius: 5px;
-    }
-
-    button {
-      width: 100%;
-      padding: 12px;
-      background-color: #4285f4;
-      border: none;
-      border-radius: 5px;
+    header {
+      background: var(--main-color);
       color: white;
-      font-size: 16px;
-      cursor: pointer;
+      padding: 40px 20px;
+      text-align: center;
     }
-
-    button:hover {
-      background-color: #357ae8;
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
-
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #70757a;
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .game {
+      background: white;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .game:hover {
+      transform: scale(1.02);
+    }
+    .game img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .game h2 {
+      color: var(--main-color);
+      margin-bottom: 10px;
+    }
+    .game p {
+      margin-bottom: 15px;
+    }
+    .play-btn {
+      display: inline-block;
+      background: var(--accent-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .play-btn:hover {
+      background: #e91e63;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-  <div class="logo">G-Bonus</div>
+  <header>
+    <h1>Simple Game Zone</h1>
+    <p>Play fun browser games with one click — no downloads needed!</p>
+  </header>
 
   <div class="container">
-    <div class="headline">Sign Up and Get a $750 Amazon Bonus!</div>
-    <div class="subtext">Shop your favorites now.</div>
 
-    <form>
-      <input type="email" placeholder="Enter your email" required>
-      <button type="submit">Claim Your Bonus</button>
-    </form>
+    <div class="game">
+      <img src="https://via.placeholder.com/800x400?text=Flappy+Bird+Clone" alt="Flappy Bird Clone">
+      <h2>Flappy Bird Clone</h2>
+      <p>Tap to fly and dodge pipes. Addictive and simple!</p>
+      <a href="https://flappybird.io" class="play-btn" target="_blank">Play Now</a>
+    </div>
+
+    <div class="game">
+      <img src="https://via.placeholder.com/800x400?text=2048+Puzzle" alt="2048">
+      <h2>2048 Puzzle</h2>
+      <p>Slide tiles and combine numbers to reach 2048!</p>
+      <a href="https://play2048.co" class="play-btn" target="_blank">Play Now</a>
+    </div>
+
+    <div class="game">
+      <img src="https://via.placeholder.com/800x400?text=Snake+Game" alt="Snake">
+      <h2>Snake Classic</h2>
+      <p>Control the snake and eat dots to grow. Classic fun!</p>
+      <a href="https://playsnake.org" class="play-btn" target="_blank">Play Now</a>
+    </div>
+
+    <div class="game">
+      <img src="https://via.placeholder.com/800x400?text=Tetris" alt="Tetris">
+      <h2>Tetris</h2>
+      <p>Stack blocks and clear rows before the screen fills up.</p>
+      <a href="https://tetris.com/play-tetris" class="play-btn" target="_blank">Play Now</a>
+    </div>
+
+    <div class="game">
+      <img src="https://via.placeholder.com/800x400?text=Minesweeper" alt="Minesweeper">
+      <h2>Minesweeper</h2>
+      <p>Uncover tiles and avoid hidden mines. Use logic!</p>
+      <a href="https://minesweeper.online" class="play-btn" target="_blank">Play Now</a>
+    </div>
+
   </div>
 
-  <div class="footer">
-    Not affiliated with Google or Amazon. Terms apply.
-  </div>
+  <footer>
+    &copy; 2025 Simple Game Zone. All rights reserved.
+  </footer>
 
 </body>
 </html>
